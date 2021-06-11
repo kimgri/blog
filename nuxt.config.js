@@ -21,7 +21,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   
-  plugins: ["C:/Users/kimgri/blog/plugins/sanity-blocks.js",'@plugins/sanity-blocks.js'],
+  plugins: [
+    
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

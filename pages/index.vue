@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
-        BLOG TITLE
-      </h1>
+      <h1 class="title">BLOG TITLE</h1>
     </div>
     <div class="posts">
       <div v-for="post in posts" :key="post._id">
@@ -23,7 +21,7 @@ export default {
     const query = groq`*[_type == "post"]`
     const posts = await $sanity.fetch(query)
     return { posts }
-  },
+  }
 }
 </script>
 
@@ -31,10 +29,17 @@ export default {
 .container {
   margin: 2rem;
   min-height: 100vh;
+  background-color: yellow;
 }
 
 .posts {
   margin: 2rem 0;
+  background-color: grey;
 }
+
+.title {
+  background-color: blue;
+}
+
 .summary { margin-top: 0.5rem; }
 </style>
